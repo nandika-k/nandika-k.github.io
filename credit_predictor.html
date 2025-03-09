@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Predictor</title>
+</head>
+
+<body>
+    <h1>Credit Predictor</h1>
+    <div>
+        <p>
+            I worked on cleaning data and developing models on the German Statlog Credit Dataset with 3 collaborators for my CS375 class at NJIT.
+            I specifically trained a Random Forest Classifier model to determine whether customers were credit-worthy or not.
+        </p>
+        <p>
+            I used libraries like Scikit-Learn, pandas, and matplotlib to train the model and visualize the data. The model achieved an accuracy
+            of 81.5%.
+        </p>
+        <div class="gist-container" id="gist">
+            <script src="https://gist.github.com/nandika-k/f47b5bd3451e288978d1ba7365f1ab4e.js"></script>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            console.log("JavaScript is running!");
+
+            setTimeout(() => {
+                let gistContainer = document.getElementById("gist");
+                if (gistContainer) {
+                    console.log("Gist container found! Attempting to scroll...");
+                    gistContainer.scrollIntoView({ behavior: "smooth", block: "center" });
+                } else {
+                    console.log("Gist container NOT found!");
+                }
+            }, 2000);
+        });
+    </script>
+</body>
+
