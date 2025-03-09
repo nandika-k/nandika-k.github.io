@@ -23,7 +23,7 @@ nav, p {
     color: black;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.gist-container {
+.gist-container, ppt-container {
     margin-left: 50px;
 }
 .sr-only {
