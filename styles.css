@@ -23,8 +23,29 @@ nav, p {
     color: black;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.gist-container, .ppt-container, .iframe {
+.gist-container, .iframe {
     margin-left: 50px;
+    margin-right: 50px;
+}
+.ppt-container {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.ppt-iframe-wrapper {
+    position: relative;
+    width: 60%;
+    padding-top: 40%;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.ppt-iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 .sr-only {
     position: absolute;
@@ -40,8 +61,7 @@ nav, p {
 .column {
     float: left;
     width: 33%;
-  }
-  
+} 
   /* Clear floats after the columns */
 .row:after {
     content: "";
