@@ -31,6 +31,21 @@ h2, h3 {
     height: 30px;
     width: auto;
 }
+.topnav {
+    background-color: #663399;
+    overflow: hidden;
+}
+.topnav a {
+    float: left;
+    color: #f4f2f7;
+    text-align: center;
+    margin-left: 20px;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 nav, p {
     margin-left: 50px;
     margin-right: 50px;
