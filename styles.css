@@ -1,4 +1,4 @@
-h1, h2, h3 {
+h1 {
     margin-left: 50px;
     margin-top: 50px;
     margin-bottom: 10px;
@@ -6,6 +6,20 @@ h1, h2, h3 {
     color:#663399;
     font-family: monospace;
 
+}
+h2, h3 {
+    margin-left: 110px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    size: auto;
+    color:#663399;
+    font-family: monospace;
+
+}
+.header {
+    padding: 60px;
+    text-align: left;
+    background-color: #f1f1f1;
 }
 .logo-container {
     display: flex;
@@ -17,7 +31,7 @@ h1, h2, h3 {
     width: auto;
 }
 nav, p {
-    margin-left: 50px;
+    margin-left: 110px;
     margin-right: 50px;
     margin-top: 0px;
     color: black;
