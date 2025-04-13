@@ -32,7 +32,14 @@ h2, h3 {
     width: auto;
 }
 nav, p {
-    margin-left: 110px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 0px;
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+homepage, p1 {
+    margin-left: 60px;
     margin-right: 50px;
     margin-top: 0px;
     color: black;
