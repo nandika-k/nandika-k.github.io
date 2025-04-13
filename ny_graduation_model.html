@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Predictor</title>
+</head>
+
+<body>
+    <h1>NY Graduation Model</h1>
+    <div>
+        <p>
+            Using the 2005-2015 Graduation Rates Public - School dataset from NYC Open Data, I created a multiple
+            linear regression model that predicted the Total Grads % of Cohort.
+            <br><br>
+            The model iterated through the other features to find the best set of inputs by measuring the impact
+            on the r-squared value. If the inclusion of a feature improved this metric, it was kept. Otherwise,
+            it was discarded from the list of input features.
+            <br><br>
+            The data required significant pre-processing as the original data had certain formatting issues. After
+            handling this with the replace and strip methods in python, the types of the numeric data was updated
+            from object to floats. Then, null values for features were replaced by the mean or dropped based on the
+            standard deviation of the values.
+            <br><br>
+            To visualize the relationships between the features, I generated a seaborn heatmap. It indicated that the
+            three columns that correlated most to Total Grads % of Cohort were 'Total Regents of % of grads',
+            'Still Enrolled % of cohort', and 'Dropped Out % of cohort'. All these features are members of the final
+            input list for the model. The heatmap also revealed that the Cohort Year had fairly weak correlations
+            with most of the features, suggesting that class year didn't impact graduation rates. It's important to note
+            that this assumption could throw off predictions in anomalous years like 2020 and 2021.
+            <br><br>
+            Other visualizations like matplotlib scatterplots and histogram as well as seaborn boxplots revealed key
+            details about the data. The diagrams highlighted links between Regents diplomas and overall graduation rates.
+            The boxplot revealed that overall graduation rates were generally around 70% but there were outliers with
+            extremely low rates. The histogram indicated that traditional June graduations were the most common and that
+            6 year graduation was more common than August graduations.
+        </p>      
+        <br>
+        <div class="gist-container" id="gist">
+            <script src="https://gist.github.com/nandika-k/52ffb5b9043134b7c36f54a7032dd815.js"></script>
+        </div>
+    </div>
+</body>
