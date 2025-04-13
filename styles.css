@@ -3,7 +3,7 @@ h1, h2, h3 {
     margin-top: 50px;
     margin-bottom: 10px;
     size: auto;
-    color:rebeccapurple;
+    color:#663399;
     font-family: monospace;
 
 }
@@ -26,7 +26,15 @@ nav, p {
 .gist-container, .iframe {
     margin-left: 50px;
     margin-right: 50px;
+    max-height: 3000px;
+    overflow: auto;
 }
+
+.gist .blob-wrapper.data {
+    max-height: 500px;
+    overflow: auto;
+ }
+
 .ppt-container {
     display: flex;
     margin-left: 50px;
