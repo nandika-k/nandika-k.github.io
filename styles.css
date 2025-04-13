@@ -1,6 +1,6 @@
 h1 {
     margin-left: 50px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     margin-bottom: 10px;
     size: auto;
     color:#663399;
@@ -18,8 +18,9 @@ h2, h3 {
 }
 .header {
     padding: 60px;
+    padding-left: 60px;
     text-align: left;
-    background-color: #f1f1f1;
+    background-color: #f4f2f7;
 }
 .logo-container {
     display: flex;
