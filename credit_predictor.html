@@ -8,7 +8,9 @@
 </head>
 
 <body>
-    
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+    </div>
     <h1>Credit Predictor</h1>
     <div>
         <p>
@@ -34,21 +36,5 @@
             <script src="https://gist.github.com/nandika-k/f47b5bd3451e288978d1ba7365f1ab4e.js"></script>
         </div>
     </div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            console.log("JavaScript is running!");
-
-            setTimeout(() => {
-                let gistContainer = document.getElementById("gist");
-                if (gistContainer) {
-                    console.log("Gist container found! Attempting to scroll...");
-                    gistContainer.scrollIntoView({ behavior: "smooth", block: "center" });
-                } else {
-                    console.log("Gist container NOT found!");
-                }
-            }, 2000);
-        });
-    </script>
 </body>
 
