@@ -124,21 +124,30 @@ homepage, p1 {
     white-space: nowrap;
     border: 0;
 }
-.column {
-    float: left;
-    width: 33%;
-} 
-  /* Clear floats after the columns */
+.row {
+    display: flex;
+    flex-wrap: wrap; /* allows cards to wrap on smaller screens */
+    justify-content: flex-start; /* or space-between / space-around / center */
+    flex-direction: row;
+    gap: 40px;
+    text-align: left;
+    margin-left: 110px; /* keep if you want that left margin */
+}
+
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
 .card {
+    display: flex;
+    flex-direction: column;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: 270px;
     max-width: 300px;
-    margin: auto;
+    margin-bottom: 0px;
     text-align: center;
+    justify-content: space-between;
     background-color: #fefbff;
 }
 .card-description {
