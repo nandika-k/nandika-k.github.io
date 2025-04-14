@@ -7,14 +7,30 @@ h1 {
     font-family: monospace;
 
 }
-h2, h3 {
+h2 {
     margin-left: 110px;
     margin-top: 50px;
     margin-bottom: 10px;
     size: auto;
     color:#663399;
     font-family: monospace;
-
+    font-size: xx-large;
+}
+h3 {
+    margin: 20px;
+    padding-top: 20px;
+    size: auto;
+    color:#663399;
+    font-family: monospace;
+    font-size: x-large;
+}
+h4 {
+    margin: 50px;
+    margin-bottom: 10px;
+    size: auto;
+    color:#663399;
+    font-family: monospace;
+    font-size: x-large;
 }
 .header {
     padding: 60px;
@@ -46,9 +62,14 @@ h2, h3 {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-nav, p {
+nav, .description {
     margin-left: 50px;
     margin-right: 50px;
+    margin-top: 0px;
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p {
     margin-top: 0px;
     color: black;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -112,4 +133,34 @@ homepage, p1 {
     content: "";
     display: table;
     clear: both;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    background-color: #fefbff;
+}
+.card-description {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0px;
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #663399;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+button:hover, a:hover {
+    opacity: 0.7;
 }
