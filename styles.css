@@ -42,6 +42,9 @@ h4 {
 .body {
     color: white;
 }
+.about-me {
+    margin-left: 50px;   
+}
 .logo-container {
     display: flex;
     margin-left: 50px;
