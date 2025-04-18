@@ -149,13 +149,13 @@ homepage, p1 {
 .card {
     display: flex;
     flex-direction: column;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 #00000033;
     height: 270px;
     max-width: 300px;
     margin-bottom: 0px;
     text-align: center;
     justify-content: space-between;
-    background-color: #fefbff;
+    background-color: #fffeff;
 }
 .card-description {
     margin-left: 20px;
