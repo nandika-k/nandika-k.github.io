@@ -39,6 +39,9 @@ h4 {
     text-align: left;
     background-color: #FDF5FF;
 }
+.body {
+    color: white;
+}
 .logo-container {
     display: flex;
     margin-left: 50px;
