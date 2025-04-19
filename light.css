@@ -190,3 +190,25 @@ button:hover, a:hover {
     margin-top: 0px;
     width: 60%;
 }
+.cool-button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    background-image: linear-gradient(to bottom right, #e3e1ff,#d9d7ff);
+    background-size: 200% 200%;
+    background-position: 0% 0%;
+    border-color: transparent;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    width: 100px;
+    font-size: 17px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-position 0.5s ease, color 0.3s ease;
+}
+.cool-button:hover {
+    background-position: 100% 100%;
+    color: #ffffff;
+}
