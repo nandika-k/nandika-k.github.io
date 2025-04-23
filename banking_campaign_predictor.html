@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = prefersDark ? 'dark.css' : 'light.css';
+        document.head.appendChild(link);
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYC Graduation Model</title>
+    <link rel="icon" href="/images/favicon.ico">
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a class="active" href="credit_predictor.html">Credit Predictor</a>
+        <a class="active" href="ny_graduation_model.html">NY Grad Model</a>
+        <a class="active" href="mini_projects.html">Mini-Projects</a>
+    </div>
+    <br>
+    <h1>Banking Campaign Predictor</h1>
+    <div class="description">
+        <p>
+            Work in progress.
+            <br><br>
+            Using the <a class="active" href="https://www.kaggle.com/datasets/prakharrathi25/banking-dataset-marketing-targets/"
+            >Banking Data - Marketing Targets</a> dataset from Kaggle, my group and I attempt to predict whether a
+            marketing campaign was successful. Success is defined as whether a customer subscribed to a term deposit.
+        </p>      
+        <br>
+        <a class='cool-button' href="https://github.com/nandika-k/Data-Science-Project-2">
+            Github Repo
+        </a>
+    </div>
+</body>
