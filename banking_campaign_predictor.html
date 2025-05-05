@@ -24,11 +24,28 @@
     <h1>Banking Campaign Predictor</h1>
     <div class="description">
         <p>
-            Work in progress.
-            <br><br>
             Using the <a class="active" href="https://www.kaggle.com/datasets/prakharrathi25/banking-dataset-marketing-targets/"
-            >Banking Data - Marketing Targets</a> dataset from Kaggle, my group and I attempt to predict whether a
-            marketing campaign was successful. Success is defined as whether a customer subscribed to a term deposit.
+            >Banking Data - Marketing Targets</a> dataset from Kaggle, my group and I predicted whether a
+            successfully acquired a customer. Here, success was defined as whether a customer subscribed
+            to a term deposit.
+            <br><br>
+            I collaborated on preprocessing and exploratory data analysis. For the former, I decided which
+            columns to drop and why. I also used Label Encoding to convert unranked categorical features
+            into numerical values. I did the same of ranked categorical features but using maps to assign
+            unique values a rank. I used the Pandas get_dummies method to convert the binary features into
+            usable data. For the EDA portion, I coded a seaborn heatmap to visualize the correlations and
+            used matplotlib to create histograms and boxplots to understand the distribution of data.
+            <br><br>
+            I split the data into training and testing sets and spearheaded the coding of the Random Forest
+            Classifier. I used an iterative approach to find the best hyperparameters for the model. I elected
+            to include features that improved the model's accuracy and precision, especially for the minority
+            class. My groupmate and I tested the impact of various hyperparameter combinations on the confusion
+            matrix and classification report to refine the model. After determining the most important features,
+            I used seaborn to visualize the correlation between a successful outcome and these features.
+            <br><br>
+            When both models were complete, I analyzed the results and synthesized the findings into a concise
+            conclusion about the models' performances. As a group, we created a PowerPoint presentation to
+            explain our approach and findings.
         </p>      
         <br>
         <a class='cool-button' href="https://github.com/nandika-k/Data-Science-Project-2">
