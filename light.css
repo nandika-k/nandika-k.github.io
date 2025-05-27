@@ -211,3 +211,9 @@ button:hover, a:hover {
 .cool-button:hover {
     background-position: 100% 100%;
 }
+
+.item {
+    width: 35vh;
+    display: inline-block;
+    vertical-align: top;
+}

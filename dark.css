@@ -215,3 +215,9 @@ button:hover, a:hover {
     background-position: 100% 100%;
     color: #ffffff;
 }
+
+.item {
+    width: 35vh;
+    display: inline-block;
+    vertical-align: top;
+}
