@@ -218,7 +218,7 @@ button:hover, a:hover {
 }
 
 .item {
-    width: 35vh;
+    width: 30vw;
     display: inline-block;
     vertical-align: top;
 }
