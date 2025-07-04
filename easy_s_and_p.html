@@ -26,8 +26,9 @@
     <div class="description">
         <p>
             I scraped and cleaned data about the S&P 500 from Wikipedia usind Pandas. Then, using SQLAlchemy, I connected to MySQL and
-            wrote the data to table. I also wrote a Python program to fetch, clean, and store data from Yahoo Finance about each individual
-            stock to MySQL. However, due to rate-limiting by Yahoo Finance, this part is incomplete.
+            wrote the data to table. I also wrote a Python program to fetch, clean, and store data like the beta and a recommendation score
+            from Yahoo Finance about each individual stock to MySQL. The recommendation score is based on analyst buy/sell recommendations
+            and is designed to measure the confidence of the prediction based on the number of analysts.
         </p>
         <p>
             Using HTML and JavaScript, I built a front-end that allows users to filter by sector and sort by the ticker, beta, or recommendation
