@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = prefersDark ? 'dark.css' : 'light.css';
+        document.head.appendChild(link);
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Predictor</title>
+    <link rel="icon" href="/images/favicon.ico">
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a class="active" href="banking_campaign_predictor.html">Banking Campaign Predictor</a>
+        <a class="active" href="ny_graduation_model.html">NY Grad Model</a>
+        <a class="active" href="credit_predictor.html">Credit Predictor</a>
+        <a class="active" href="mini_projects.html">Mini-Projects</a>
+    </div>
+    <br>
+    <h1>Easy S&P</h1>
+    <div class="description">
+        <p>
+            I scraped and cleaned data about the S&P 500 from Wikipedia usind Pandas. Then, using SQLAlchemy, I connected to MySQL and
+            wrote the data to table. I also wrote a Python program to fetch, clean, and store data from Yahoo Finance about each individual
+            stock to MySQL. However, due to rate-limiting by Yahoo Finance, this part is incomplete.
+        </p>
+        <p>
+            Using HTML and JavaScript, I built a front-end that allows users to filter by sector and sort by the ticker, beta, or recommendation
+            score. I connected my database to the frontend using FastAPI. I also wrote methods to create the urls for filtering and sorting. And
+            I defined the table structures through SQLAlchemy.
+        </p>
+        <br>
+        <a class='cool-button' href="https://github.com/nandika-k/Easy-S-and-P">
+            Github Repo
+        </a>
+    </div>
+</body>
+
