@@ -1,7 +1,7 @@
 /* Base styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color:white;
+    background-color:rgb(252, 249, 255);
     margin: 0;
     padding: 0;
 }
@@ -32,7 +32,7 @@ h3, h4 {
 .header {
     padding: 3rem 5%;
     text-align: left;
-    background-image: linear-gradient(to bottom right, #e3e1ff,#d9d7ff);
+    background-image: linear-gradient(to bottom right, #edecfd,#d1bbfc);
 }
 
 .about-me,
@@ -58,7 +58,7 @@ nav,
 }
 
 .topnav {
-    background-image: linear-gradient(to bottom right, #e3e1ff,#d9d7ff);
+    background-image: linear-gradient(to bottom right, #edecfd,#d1bbfc);
     overflow: hidden;
 }
 
@@ -136,13 +136,13 @@ img, iframe {
     justify-content: left; /* or space-between / space-around / center */
     gap: 40px;
     text-align: left;
-    margin-left: 0 5%; 
+    margin: 0 5%; 
 } 
 .card {
     display: flex;
     flex-direction: column;
-    background-color: #fffeff;
-    box-shadow: 0 4px 8px 0 #00000033;
+    background-color: #f8f5ff;
+    box-shadow: 0 4px 8px 0 #9c8da6;
     width: 100%;
     max-width: 300px;
     flex: 1 1 300px;
@@ -152,7 +152,7 @@ img, iframe {
 .card-description {
     margin: 0 20px;
     margin-bottom: 3%;
-    color: #663399;
+    color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     flex-grow: 1;
 }
@@ -161,8 +161,8 @@ button {
     outline: 0;
     display: inline-block;
     padding: 8px;
-    background-image: linear-gradient(to bottom right, #e3e1ff,#d9d7ff);
-    color: #663399;
+    background-image: linear-gradient(to bottom right, #edecfd,#d1bbfc);
+    color: black;
     cursor: pointer;
     width: 100%;
     font-size: 1rem;
@@ -178,7 +178,7 @@ button:hover, a:hover {
     outline: 0;
     display: inline-block;
     padding: 8px;
-    background-image: linear-gradient(to bottom right, #e3e1ff,#d9d7ff);
+    background-image: linear-gradient(to bottom right, #edecfd,#d1bbfc);
     background-size: 200% 200%;
     background-position: 0% 0%;
     color: black;
@@ -196,9 +196,7 @@ button:hover, a:hover {
 }
 
 .item {
-    width: 30vw;
-    display: inline-block;
-    vertical-align: top;
+    width: 100%;
 }
 
 /* Responsive adjustments */
