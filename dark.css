@@ -235,3 +235,7 @@ button:hover, a:hover {
         gap: 20px;
     }
 }
+.badge {
+    width: 20%;
+    height: auto;
+}
