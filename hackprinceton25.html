@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = prefersDark ? 'dark.css' : 'light.css';
+        document.head.appendChild(link);
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rescura - HackPrinceton 25</title>
+    <link rel="icon" href="/images/favicon.ico">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EV93RNDLHF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EV93RNDLHF');
+</script>
+<body>
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a class="active" href="girlhacks25.html">Gaia - GirlHacks25</a>
+        <a class="active" href="easy_s_and_p.html">Easy S&P</a>
+        <a class="active" href="banking_campaign_predictor.html">Banking Campaign Predictor</a>
+        <a class="active" href="credit_predictor.html">Credit Predictor</a>
+        <a class="active" href="mini_projects.html">Mini-Projects</a>
+    </div>
+    <br>
+    <h1>Rescura - HackPrinceton 25</h1>
+    <div class="description">
+        <p>
+            My team at HackPrinceton (Fall '25) built Rescura because no one should face health emergencies alone.
+            Our goal is simple yet powerful: to turn every phone into a digital first responder that recognises
+            signs of distress, guides lifesaving action, and calls for help when humans can’t.
+            <br>
+            Rescura was born from compassion and urgency, designed to make technology serve humanity where it’s
+            needed most.
+            <br><br>
+            Rescura detects early warning signs of cardiac emergencies and acts autonomously to protect lives.
+            <br>
+            Real-time monitoring: Analyses ECG and motion data to identify dangerous patterns such as arrhythmia,
+            immobility, or sudden impact.
+            <br>
+            Instant response: When risk is high, Rescura triggers SOS alerts with location data and begins calm,
+            step-by-step CPR coaching for bystanders.
+            <br>
+            Disaster resilience: During natural disasters or network outages, Rescura enters SOS Mode, continuing
+            to monitor offline devices and queue alerts until connectivity is restored.
+            <br>
+            Accessible safety: Designed for low-power, low-bandwidth environments, this technology brings intelligent
+            emergency response to places where it has never been before.
+            <br><br>
+            Rescura doesn’t diagnose; it empowers. It bridges the gap between danger and help, giving every person a
+            fighting chance.
+            <br><br>
+            On the technical side, we used signal processing, machine learning (LightGBM), and integrated Grok as our
+            AI agent, enabling real-time reasoning, response generation, and adaptive decision-making during emergencies.
+            Our stack included Python, React, ESP32, Arduino, and Chart.js, using data from the MIT-BIH ECG and WEDA-FALL
+            datasets.
+            <br><br>
+            I converted our fall data to 125Hz format from 5 to 50Hz data and generated synthetic data while incorporating
+            error handling into all methods. I worked on fine-tuning LGBM parameters. I collaborated on pitch development
+            and presentation.
+        </p>      
+        <br><br>
+        <a class='cool-button' href="https://devpost.com/software/rescura-emergency-alert-service">
+            Devpost
+        </a>
+    </div>
+    <br><br><br><br><br>
+</body>

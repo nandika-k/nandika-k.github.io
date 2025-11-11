@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = prefersDark ? 'dark.css' : 'light.css';
+        document.head.appendChild(link);
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaia - GirlHacks 25</title>
+    <link rel="icon" href="/images/favicon.ico">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EV93RNDLHF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EV93RNDLHF');
+</script>
+<body>
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a class="active" href="hackprinceton25.html">Rescura</a>
+        <a class="active" href="easy_s_and_p.html">Easy S&P</a>
+        <a class="active" href="banking_campaign_predictor.html">Banking Campaign Predictor</a>
+        <a class="active" href="credit_predictor.html">Credit Predictor</a>
+        <a class="active" href="mini_projects.html">Mini-Projects</a>
+    </div>
+    <br>
+    <h1>Gaia - GirlHacks25</h1>
+    <div class="description">
+        <p>
+            Gaia won 1st place at GirlHacks 25. It's a web application with a dynamic AI chatbot designed to support
+            women on campus by connecting them with resources, guidance, and community! 🌟 Inspired by Greek goddesses,
+            the platform begins with a chat with Gaia—the source of all life. From there, users can connect with the
+            goddess they need most: Athena for wisdom and academics, Artemis for mentorship and independence, Aphrodite
+            for confidence and empowerment, Tyche for scholarships, or Gaia for general support.
+            <br>
+            Each goddess searches the web to provide relevant answers and resources—whether it’s events from
+            Highlander Hub, research being conducted at NJIT, tutorials from YouTube, tutoring services on campus, and
+            more. Students can log in securely, access curated NJIT resources, and find encouragement through a
+            goddess-inspired mentorship experience that ensures they’re never alone.
+            <br><br>
+            Frontend: React, Vite, HTML, CSS, JavaScript, TypeScript
+            Backend: Python, Gemini AI, Azure AI, MongoDB, Auth0, FastAPI, BeautifulSoup
+            <br><br>
+            I worked on python scripts to scrape and process the data so it could be used by our RAG, built with Azure
+            AI. I incorporated Gemini API to tag the data more intelligently. I also contributed to the design process
+            and helped plan and manage the project.
+        </p>      
+        <br><br>
+        <a class='cool-button' href="https://devpost.com/software/gaia-w8bfdn?_gl=1*jum9kg*_gcl_au*MTI5MDQ5OTkzLjE3NTg2NTgzMDY.*_ga*OTEwMzQ1MDk2LjE3NTg2NTgzMDY.*_ga_0YHJK3Y10M*czE3NjI4OTY2OTgkbzQxJGcxJHQxNzYyODk2NzUyJGo2JGwwJGgw">
+            Devpost
+        </a>
+    </div>
+    <br><br><br><br><br>
+</body>
