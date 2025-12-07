@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = prefersDark ? 'dark.css' : 'light.css';
+        document.head.appendChild(link);
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaia - GirlHacks 25</title>
+    <link rel="icon" href="/images/favicon.ico">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EV93RNDLHF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EV93RNDLHF');
+</script>
+<body>
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a class="active" href="hackprinceton25.html">HackPrinceton25</a>
+        <a class="active" href="girlhacks25.html">GirlHacks25</a>
+        <a class="active" href="easy_s_and_p.html">Easy S&P</a>
+        <a class="active" href="banking_campaign_predictor.html">Banking Campaign Predictor</a>
+        <a class="active" href="credit_predictor.html">Credit Predictor</a>
+        <a class="active" href="mini_projects.html">Mini-Projects</a>
+    </div>
+    <br>
+    <h1>F1 Abu_Dhabi GP (2025) Predictor</h1>
+    <div class="description">
+        <p>
+            A pipeline that extracts FastF1 session laps, builds race data CSVs grouped by driver, and trains/predicts driver performance for the F1 Abu Dhabi Grand Prix.
+            <br><br>
+            Project structure (high level)
+            Data_Generator.py — generates per-race CSV summaries in race_data/.
+            Model.py — loads historical CSVs, preprocesses data, trains a Neural Network, and outputs predictions to terminal and a CSV file.
+            race_data/ — generated driver CSVs for races (output directory).
+            cache/ — FastF1 cache for all the raw race data.
+            
+            <br><br>
+            Requirements 🏎️
+            <br>
+            See requirements.txt on GitHub.
+
+            <br><br>
+            Quick setup 🏎️
+            <br>
+            Ensure Python 3.13 is on your PATH.
+            <br>
+            Run main.py
+
+            <br><br>
+            Output 🏎️
+            <br>
+            Predictions are written as a CSV file (e.g., PREDICTION_Abu_Dhabi_2025_Driver_Data.csv) inside race_data/ and to the terminal.
+        </p>      
+        <br><br>
+        <a class='cool-button' href="https://github.com/nandika-k/F1_Abu_Dhabi_GP_Predictor">
+            GitHub
+        </a>
+    </div>
+    <br><br><br><br><br>
+</body>
