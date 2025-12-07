@@ -1,6 +1,7 @@
 /* Base styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
     background-color: rgb(2, 0, 8);
     margin: 0;
     padding: 0;
@@ -73,11 +74,16 @@ nav,
     font-size: 1rem;
 }
 
-p {
+p, b {
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+}
+
+ul, li {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .homepage p {
