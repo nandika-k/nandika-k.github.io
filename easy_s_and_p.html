@@ -22,12 +22,17 @@
   gtag('config', 'G-EV93RNDLHF');
 </script>
 <body>
-    <div class="topnav">
-        <a class="active" href="index.html">Home</a>
-        <a class="active" href="mini_projects.html">Mini-Projects</a>
+    <div class="project-hero">
+        <nav class="breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="separator">/</span>
+            <a href="index.html#projects">Projects</a>
+            <span class="separator">/</span>
+            <span class="current">Easy S&P</span>
+        </nav>
+        <h1>Easy S&P</h1>
+        <p class="project-tagline">Interactive Stock Screener for S&P 500</p>
     </div>
-    <br>
-    <h1>Easy S&P</h1>
     <div class="description">
         <p>
             I scraped and cleaned data about the S&P 500 from Wikipedia usind Pandas. Then, using SQLAlchemy, I connected to MySQL and
