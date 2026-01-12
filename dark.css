@@ -14,6 +14,10 @@ h1, h2, h3, h4 {
     margin-right: 5%;
 }
 
+h1, h2 {
+    font-family: 'JetBrains Mono', monospace;
+}
+
 h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
@@ -238,7 +242,7 @@ a:hover {
     font-size: 1rem;
     font-weight: 500;
     letter-spacing: 0.5px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: background-position 0.5s ease, transform 0.2s ease, box-shadow 0.3s ease;
     box-shadow: 0 2px 8px rgba(57, 2, 75, 0.3);
 }
