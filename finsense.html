@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = prefersDark ? 'dark.css' : 'light.css';
+        document.head.appendChild(link);
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finsense</title>
+    <link rel="icon" href="/images/favicon.ico">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EV93RNDLHF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EV93RNDLHF');
+</script>
+<body>
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a class="active" href="mini_projects.html">Mini-Projects</a>
+    </div>
+    <br>
+    <h1>Finsense</h1>
+    <div class="description">
+        <p>
+            Finsense is a personalized financial research assistant that helps users make sense of market 
+            uncertainty by combining live market data, news events, and risk analysis. Instead of giving 
+            investment advice, it highlights what areas of the market are worth researching based on current 
+            conditions and a user's preferences.
+            <br><br>
+            The system is built around an AI agent that reasons about information, supported by modular MCP 
+            (Model Context Protocol) servers that provide reliable data and analytics. I developed three 
+            specialized MCP servers: <strong>mcp_market</strong> processes market data to understand sector 
+            and stock performance, providing historical returns and price summaries; <strong>mcp_news</strong> 
+            retrieves relevant news headlines and extracts risk-related themes from unstructured text, mapping 
+            these themes to affected sectors; and <strong>mcp_risk</strong> analyzes inter-sector relationships, 
+            correlations, and volatility to identify how risk can spread across the market.
+            <br><br>
+            I implemented the entire backend infrastructure using FastAPI, integrating the MCP servers with 
+            an intelligent coordinator agent that orchestrates multi-source financial analysis. The project 
+            utilizes yfinance for real-time market data, RSS feed parsing for news aggregation, and custom 
+            sentiment analysis algorithms. I also built a responsive web interface with JavaScript that 
+            communicates with the backend API, deployed on Vercel with the API hosted on Render. The system 
+            demonstrates advanced capabilities in asynchronous Python programming, API design, and creating 
+            practical AI-powered financial tools.
+        </p>      
+        <br><br>
+        <a class='cool-button' href="https://finsense-web.vercel.app">
+            WebApp
+        </a>
+        <a class='cool-button' href="https://github.com/nandika-k/finsense">
+            Github Repo
+        </a>
+    </div>
+    <br><br><br><br><br>
+</body>
+</html>
