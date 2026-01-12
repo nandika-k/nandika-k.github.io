@@ -27,7 +27,7 @@
 </script>
 <body>
     <div class="header">
-        <h1>Nandika Karnik</h1>
+        <h1 id="typing-name"><span class="typing-cursor"></span></h1>
         <div class="logo-container">
             <a href="https://www.linkedin.com/in/nandika-k/">
                 <img src="./images/LinkedIn_Logo.png" alt="LinkedIn" class="logo"/>
@@ -207,5 +207,32 @@
         </div>
     </div>
     <br><br><br><br><br>
+    
+    <script>
+        // Typing animation for name (runs once on page load)
+        document.addEventListener('DOMContentLoaded', function() {
+            const name = 'Nandika Karnik';
+            const typingElement = document.getElementById('typing-name');
+            const cursor = typingElement.querySelector('.typing-cursor');
+            let charIndex = 0;
+            
+            function typeCharacter() {
+                if (charIndex < name.length) {
+                    typingElement.textContent = name.substring(0, charIndex + 1);
+                    typingElement.appendChild(cursor); // Keep cursor at the end
+                    charIndex++;
+                    setTimeout(typeCharacter, 100); // 100ms delay between characters
+                } else {
+                    // Remove cursor after typing is complete
+                    setTimeout(() => {
+                        cursor.style.display = 'none';
+                    }, 500);
+                }
+            }
+            
+            // Start typing after a brief delay
+            setTimeout(typeCharacter, 300);
+        });
+    </script>
 </body>
 </html>
