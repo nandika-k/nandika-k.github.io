@@ -231,7 +231,7 @@ img, iframe {
 .card {
     display: flex;
     flex-direction: column;
-    background-color: #f8f5ff;
+    background-color: #f3eeff;
     box-shadow: 0 4px 8px 0 #9c8da6;
     width: 100%;
     max-width: 300px;
@@ -356,7 +356,7 @@ a:hover {
 }
 
 .row:has(.badge) {
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 

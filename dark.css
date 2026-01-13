@@ -369,7 +369,7 @@ a:hover {
 }
 
 .row:has(.badge) {
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
